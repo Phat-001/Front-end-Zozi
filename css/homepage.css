@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #C98888;
+}
+/* =======================Css modal ============================ */
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4)
+}
+.notification-thanhtoan{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4)
+}
+.modal_sub_noti{
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    background:#cfb4b4;
+    animation: modalFadein2 .4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.notification-thanhtoan.open{
+    display: block;
+}
+
+.modal.open{
+    display: flex;
+}
+.modal-menu{
+    height: 509px;
+    width: 400px;
+    background-color: #fff;
+    animation: modalFadein .5s ease-out;
+}
+.header-menu{
+    background-color: #c06262;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.foods-menu{
+    background-color: #fff;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.set-btn{
+	background-color:  #D08282;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	height: 30px;
+    width: 90px;
+}
+.set-btn:hover{
+	background-color: #b48484 ;
+}
+.footer{
+    display: flex;
+    height: 59px;
+    justify-content: space-around;
+}
+span{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.icon-giohang{
+    margin-left: 17px;
+    font-size: 30px;
+}
+.card-img{
+    width: 70px;
+}
+.card-items{
+    margin-right: 30px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EADEDE;
+    border-radius: 5px;
+    border: .5px solid #0a0a0a;
+    width: 350px;
+    height: 70px;
+}
+.icon-change{
+    font-size: 20px;
+    cursor: pointer;
+}
+label{
+    font-size: 27px;
+    background-color: #c3c3c3;
+}
+.add-items{
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.total-money{
+    height:60px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.gia{
+    margin-left: 20px;
+}
+.text-total{
+    font-size: 20px;
+}
+/* =======================End css modal========================== */
+
+/* =====================css foods=================================== */
+header{
+    background-color: #C98888;
+    height:10vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.foods-order{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: rgb(252, 244, 244);
+    height: 80vh;
+    border: 1px solid black;
+    margin-top: 0px;
+    position: relative;
+    overflow: auto;
+}
+.btn-search-foods{
+    margin: auto 20px 22px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px #585353;
+}
+.btn-search-foods:hover{
+    background-color: rgb(240, 207, 243);
+}
+.search-foods{
+    margin-bottom: 10px;
+    border: none;
+    height:30px;
+    width: 220px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 4px 5px 5px #585353;
+}
+.giohang-homepage{
+    font-size: 33px;
+    color: rgb(231, 214, 214);
+    margin-right: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.giohang-homepage:hover{
+    color: rgba(255, 255, 255, 0.808);
+}
+.logo-homepage{
+    width: 182px;
+    cursor: pointer;
+}
+.nav-homepage{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.btn-select{
+    margin: auto 20px 22px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #E9B7B7;
+    box-shadow: 3px 5px 5px #a78282;
+}
+.btn-select:hover{
+    background-color: rgb(240, 207, 243);
+}
+.btn-select-ran-out{
+    margin: auto 20px 22px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px #a78282;
+}
+.select-field-foods{
+    right: 24px;
+    top: 83px;
+    position: fixed;
+}
+select{
+    background-color: #eca5a5;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.notification-pay{
+    color:red;
+    display:none;
+}
+.notification-pay.open{
+    display:block;
+}
+.print-bill{
+    padding: 5px 7px;
+    position: absolute;
+    bottom:20px;
+    left:20px;
+}
+.sub-thoat{
+    padding: 5px 7px;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+}
+.khachtratienchua{
+    position:absolute;
+    top:10px;
+    /* left: 50%; */
+    /* transform:translateX(-50%); */
+    font-size: 30px;
+    right: 10px;
+    left: 10px;
+}
+
+.notification-pay{
+    position:absolute;
+    top: 30%;
+    left: 73px;
+    right: 20px;
+}
+/* ===========animation=========== */
+@keyframes modalFadein{
+    from { opacity:0; transform: translateY(-200px);}
+    top { opacity:1; transform: translateY(0);}
+}
+@keyframes modalFadein2{
+    from { opacity:0;}
+    top { opacity:1;}
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+.bg-pink{
+  background-color: #bd6a6a;
+  border-bottom: 1px solid #000;
+}
+.bg-pink2{
+  background-color: #C4C4C4;
+}
+.bi{
+  margin-right: 10px;
+  z-index: 10;
+}
+.bg-pink3{
+  background-color: #c3c3c3;
+}
+.logo-manage{
+  margin-top: 0px;
+
+}
+h3{
+  font-weight: bold;
+  margin-right: 10px;
+}
+.nav-sub{
+  background-color: #bd6a6a;
+}
+.bold-text{
+  color: #000;
+}
+.text-nav-sub{
+  color:rgb(218, 200, 200);
+  font-weight: bold;
+}
+.text-nav-sub:hover{
+  color:rgb(255, 241, 241);
+}
+.cutom{
+  margin-top: 15px;
+  width:300px;
+}
+.add-member{
+  top:20px;
+  right: 5px;
+  position: absolute;
+}
+.card-header{
+  position: relative;
+}

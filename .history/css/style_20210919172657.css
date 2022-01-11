@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url("../img/hinhnen.jpg");
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	height: 100vh;
+}
+
+.container{
+
+}
+.col-md-5{
+	height: 400px;
+}
+.col-md-6{
+	height: 185px;
+	width: 160px;
+	border-radius: 10px;
+	background-color: #A6AF8D;
+}
+
+.row{
+	height: 400px;
+	background-color: #e4a0a098;
+}
+
